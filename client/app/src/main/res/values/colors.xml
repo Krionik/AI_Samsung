@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Основные цвета -->
+    <color name="primary_color">#6750A4</color>  /* Фиолетовый Material 3 */
+    <color name="primary_dark">#463770</color>
+    <color name="primary_light">#EADDFF</color>
+
+    <!-- Фоны -->
+    <color name="light_background">#FFFBFE</color>  /* Светлый фон */
+    <color name="dark_background">#1C1B1F</color>  /* Для темной темы */
+
+    <!-- Текст -->
+    <color name="text_primary">#1C1B1F</color>     /* Основной текст */
+    <color name="text_secondary">#49454F</color>   /* Вторичный текст */
+    <color name="text_on_primary">#FFFFFF</color>  /* Текст на primary цвете */
+
+    <!-- Дополнительные -->
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FFC107</color>
+    <color name="error_color">#F44336</color>
+</resources>

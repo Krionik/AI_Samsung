@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401603231568",
+    "project_id": "facematch-1a7a4",
+    "storage_bucket": "facematch-1a7a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401603231568:android:87fce39d91e4402d397655",
+        "android_client_info": {
+          "package_name": "com.example.facematch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxdptvX_ETPq-1EbIrYCDv6-NEL4c-aQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

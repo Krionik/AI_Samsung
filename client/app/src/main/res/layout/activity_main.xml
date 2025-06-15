@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/previewImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/uploadCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/previewImage"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="12dp"
+        app:strokeColor="@color/primary_color"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_photo"
+                app:tint="@color/primary_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Загрузите фото для распознавания"
+                android:textAlignment="center"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Поддерживаются JPG, PNG"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadCard"
+        android:layout_marginTop="16dp"
+        android:text="Выбрать фото"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@color/primary_color"
+        app:icon="@drawable/ic_camera"
+        app:iconGravity="start"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/resultContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadButton"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Результаты распознавания:"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/resultsListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
